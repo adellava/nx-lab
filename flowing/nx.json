@@ -1,0 +1,22 @@
+{
+  "implicitDependencies": {
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    ".eslintrc.json": "*"
+  },
+  "affected": { "defaultBase": "master" },
+  "npmScope": "flowing",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
+    }
+  },
+  "projects": {
+    "hero-app": { "tags": [] },
+    "hero-app-e2e": { "tags": [], "implicitDependencies": ["hero-app"] },
+    "hero-data-access": { "tags": [] },
+    "hero-ui": { "tags": [] },
+    "hero-controllers": { "tags": [] },
+    "hero-api": { "tags": [] }
+  }
+}
