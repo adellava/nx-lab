@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core'
-import { HeroDTO } from '@flowing/hero/data-access'
+import { Component, Input } from '@angular/core';
+import { HeroDTO } from '@flowing/hero/api-interfaces';
 @Component({
   selector: 'flw-hero-viewer',
   template: `
@@ -32,5 +32,5 @@ import { HeroDTO } from '@flowing/hero/data-access'
   ],
 })
 export class HeroViewerComponent {
-  @Input() hero: HeroDTO
+  @Input() hero: HeroDTO;
 }
