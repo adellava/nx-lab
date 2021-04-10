@@ -6,5 +6,6 @@ module.exports = {
     '<rootDir>/libs/hero/controllers',
     '<rootDir>/apps/hero-api',
     '<rootDir>/libs/hero/api-interfaces',
+    '<rootDir>/libs/common/tokens',
   ],
 };
